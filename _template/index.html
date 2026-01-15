@@ -43,7 +43,7 @@
             </div>
             <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-3 leading-tight">{{FULL_NAME}}</h1>
             <p class="text-indigo-100 text-xl font-medium tracking-wide flex items-center gap-2">
-              {{JOB_TITLE}} <span class="text-indigo-400">@</span> {{COMPANY_NAME}}
+              {{JOB_TITLE}} <span class="text-indigo-400">|</span> {{COMPANY_NAME}}
             </p>
           </div>
           
@@ -64,14 +64,11 @@
               <div class="p-1.5 bg-indigo-500/30 rounded-md text-white">
                 <i data-lucide="map-pin" class="w-4 h-4"></i>
               </div>
-              <span class="font-medium">{{CITY_STATE}}</span>
+              <span class="font-medium">{{CITY_COUNTRY}}</span>
             </div>
             <div class="flex gap-3 mt-1 pt-3 border-t border-white/10">
               <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-indigo-200 hover:text-white transition-colors text-xs uppercase font-bold tracking-wider">
                 <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
-              </a>
-              <a href="{{PORTFOLIO_URL}}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-indigo-200 hover:text-white transition-colors text-xs uppercase font-bold tracking-wider">
-                <i data-lucide="globe" class="w-4 h-4"></i> Portfolio
               </a>
             </div>
           </div>
@@ -105,11 +102,6 @@
             <div>
                 <h3 class="text-3xl font-bold text-slate-900">Alignment Matrix</h3>
                 <p class="text-slate-500 mt-2 text-lg">How my skills map directly to {{COMPANY_NAME}}'s needs</p>
-            </div>
-            <div class="hidden md:block">
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-bold">
-                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2"></i> 100% Match
-                </span>
             </div>
           </div>
 
@@ -240,13 +232,13 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                   <button class="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-200 bg-indigo-600 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 hover:bg-indigo-700 hover:scale-105 shadow-xl shadow-indigo-200">
-                        <span>{{CTA_TEXT}}</span>
+                   <a href="mailto:{{EMAIL_ADDRESS}}" class="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-200 bg-indigo-600 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 hover:bg-indigo-700 hover:scale-105 shadow-xl shadow-indigo-200">
+                        <span>Schedule a meeting</span>
                         <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-                   </button>
-                   <button class="px-10 py-5 text-lg font-bold text-slate-600 transition-all duration-200 bg-white border-2 border-slate-200 rounded-xl hover:bg-slate-50 hover:text-indigo-600 hover:border-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-200">
-                       View Resume
-                   </button>
+                   </a>
+                   <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener noreferrer" class="px-10 py-5 text-lg font-bold text-slate-600 transition-all duration-200 bg-white border-2 border-slate-200 rounded-xl hover:bg-slate-50 hover:text-indigo-600 hover:border-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-200">
+                       View Profile
+                   </a>
                 </div>
             </div>
         </section>
